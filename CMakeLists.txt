@@ -17,6 +17,13 @@ target_link_libraries(example2 print)
 if(BUILD_TESTS)
     enable_testing()
     add_subdirectory(third-party/gtest)
+    
+    # Отключаем -Werror для GTest
+    if(CMAKE_COMPILER_IS_GNUCXX)
+        target_compile_options(gtest PRIVATE -w)
+        target_compile_options(gtest_main PRIVATE -w)
+    endif()
+    
     file(GLOB PRINT_TEST_SOURCES tests/*.cpp)
     add_executable(check ${PRINT_TEST_SOURCES})
     target_link_libraries(check print gtest_main)

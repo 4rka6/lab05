@@ -11,11 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: recursive
     - name: Install dependencies
       run: sudo apt update && sudo apt install -y cmake build-essential
-    - name: Build
+    - name: Configure and build with tests
       run: |
         rm -rf _build
-        cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+        cmake -H. -B_build -DBUILD_TESTS=ON
         cmake --build _build
-        cmake --build _build --target install
+    - name: Run tests
+      run: |
+        cd _build
+        ctest --output-on-failure

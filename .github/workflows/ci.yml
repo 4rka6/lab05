@@ -15,6 +15,7 @@ jobs:
       run: sudo apt update && sudo apt install -y cmake build-essential
     - name: Build
       run: |
+        rm -rf _build
         cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
         cmake --build _build
         cmake --build _build --target install

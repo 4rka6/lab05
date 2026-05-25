@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install dependencies
+      run: sudo apt update && sudo apt install -y cmake build-essential
+    - name: Build
+      run: |
+        cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+        cmake --build _build
+        cmake --build _build --target install

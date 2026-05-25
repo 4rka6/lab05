@@ -1,0 +1,2 @@
+/home/apkent/apkent/workspace/projects/lab03/_install/lib/libprint.a
+/home/apkent/apkent/workspace/projects/lab03/_install/include/print.hpp

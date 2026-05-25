@@ -1,0 +1,9 @@
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/print.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/example1.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/example2.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/edit_cache.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/rebuild_cache.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/list_install_components.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/install.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/install/local.dir
+/home/apkent/apkent/workspace/projects/lab03/_build/CMakeFiles/install/strip.dir

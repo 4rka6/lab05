@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/apkent/apkent/workspace/projects/lab05/build/cmake_install.cmake",
+		"/home/apkent/apkent/workspace/projects/lab05/build/third-party/gtest/cmake_install.cmake",
+		"/home/apkent/apkent/workspace/projects/lab05/build/third-party/gtest/googlemock/cmake_install.cmake",
+		"/home/apkent/apkent/workspace/projects/lab05/build/third-party/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

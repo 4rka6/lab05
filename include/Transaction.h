@@ -2,10 +2,11 @@
 #define TRANSACTION_H
 
 #include "Account.h"
+#include "IValidator.h"
 
 class Transaction {
 public:
-    static bool transfer(Account& from, Account& to, double amount);
+    static bool transfer(Account& from, Account& to, double amount, IValidator* validator = nullptr);
 };
 
 #endif
